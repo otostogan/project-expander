@@ -1,0 +1,23 @@
+{
+  "name": "project-expander",
+  "author": "otostogan",
+  "version": "1.0.0",
+  "description": "A utility to expand different types of projects.",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "bin": {
+    "project-expander": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node ./dist/copy-assets.js",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "inquirer": "^12.3.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

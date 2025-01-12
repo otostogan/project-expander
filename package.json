@@ -5,10 +5,15 @@
   "description": "A utility to expand different types of projects.",
   "license": "ISC",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otostogan/project-expander"
+  },
   "bin": {
     "project-expander": "dist/index.js"
   },
   "scripts": {
+    "prepublish": "rm -rf ./dist && npm run build",
     "build": "tsc && node ./dist/copy-assets.js",
     "start": "ts-node src/index.ts"
   },
